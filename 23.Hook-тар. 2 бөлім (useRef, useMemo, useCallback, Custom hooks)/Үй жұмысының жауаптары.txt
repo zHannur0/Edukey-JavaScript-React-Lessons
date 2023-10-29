@@ -1,0 +1,73 @@
+Calculator.js ->
+
+import React, { useState, useRef } from 'react';
+
+function Calculator() {
+  const firstNumberRef = useRef(null); //осылай мәндерін сақтап
+  const secondNumberRef = useRef(null);
+  const [sum, setSum] = useState(0);
+	
+	//мына функция арқылы қосуды жүзеге асырамыз
+  const handleAddition = () => {
+    const firstNumber = parseFloat(firstNumberRef.current.value) || 0;
+    const secondNumber = parseFloat(secondNumberRef.current.value) || 0;
+    const result = firstNumber + secondNumber;
+    setSum(result); //useState хукын пайдаланып жатырмыз
+  };
+
+
+	//ал мына жерде дизайн
+  return (
+    <div className="container flex justify-center flex-col items-center mx-auto p-4">
+      <h1 className="text-2xl font-semibold mb-4">Жеңіл Калькулятор</h1>
+      <div className="mb-4">
+        <label htmlFor="firstNumber" className="block text-sm font-semibold">Бірінші сан:</label>
+        <input
+          type="number"
+          id="firstNumber"
+          ref={firstNumberRef}
+          className="w-32 p-2 border rounded-md"
+          placeholder="Введите число"
+        />
+      </div>
+      <div className="mb-4">
+        <label htmlFor="secondNumber" className="block text-sm font-semibold">Екінші сан:</label>
+        <input
+          type="number"
+          id="secondNumber"
+          ref={secondNumberRef}
+          className="w-32 p-2 border rounded-md"
+          placeholder="Введите число"
+        />
+      </div>
+      <button
+        onClick={handleAddition}
+        className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+      >
+        Қосу
+      </button>
+      <p className="text-xl font-semibold mt-4">Нәтиже: {sum}</p>
+    </div>
+  );
+}
+
+export default Calculator;
+
+
+App.js ->
+import Calculator from "./Calculator";
+function App() {
+  return (
+    <div>
+      <Calculator></Calculator>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+

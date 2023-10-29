@@ -1,0 +1,62 @@
+App.js ->
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h2>Registration</h2>
+      <form>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" className="input-field" />
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" name="email" className="input-field" />
+        <button className="submit-button">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+
+
+App.css -> 
+
+/* Файл src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+h2 {
+  color: #333;
+}
+
+input.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20%;  
+}
+
+button.submit-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,49 @@
+//мына жерде практика жауабы, немесе мына сілтемеден қараңыздар
+https://github.com/zHannur0/React-course-EduKey-/tree/practice2
+
+"use strict"
+
+
+const numberOfBooks = +prompt("Осы күнге дейін қанша кітап оқыдыңыз?", "");
+
+let bookDB = {
+    count: numberOfBooks,
+    books: {},
+    autors: {},
+    genres: [],
+    private: false
+}
+
+// let a = prompt("Соңғы оқыған кітабыңыз?"," "),
+//     b = prompt("Оны қаншаға бағалайсыз?"," "),
+//     c = prompt("Соңғы оқыған кітабыңыз?"," "),
+//     d = prompt("Оны қаншаға бағалайсыз?"," ");
+
+// bookDB.books.a = b;
+// bookDB["books"][c] = d;
+
+for(let i = 0; i < 2; i++) {
+    let a = prompt("Соңғы оқыған кітабыңыз?"," "),
+    b = prompt("Оны қаншаға бағалайсыз?"," ");
+
+
+    console.log(bookDB);
+
+    if(a != null && b != null && a!= " " && b != " " && a.length < 50 ) {
+        bookDB.books[a] = b;
+        console.log("Done!");
+    }else {
+        console.log("Error");
+        i--;
+    }
+}
+
+if(bookDB.count < 10 && bookDB.count > 0) {
+    console.log("Аздау екен");
+}else if(bookDB.count >= 10 && bookDB.count < 30) {
+    console.log("Сіз жақсы оқырман екенсіз");
+}else if(bookDB.count >= 30) {
+    console.log("Сіз нағыз кітапсүйер екенсіз");
+}else {
+    console.log("Error!");
+}

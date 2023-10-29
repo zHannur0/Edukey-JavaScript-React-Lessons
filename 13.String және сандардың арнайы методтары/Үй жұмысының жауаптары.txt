@@ -1,0 +1,17 @@
+1.
+let text = "JavaScript is a powerful scripting language.";
+let indexOfJavaScript = text.indexOf("JavaScript");
+console.log("'JavaScript' , бірінші кездесуі:" + indexOfJavaScript);
+
+
+2.
+let names = "Пәленше, Түгенше, Леон, Кеннеди";
+let namesArray = names.split(", ");
+console.log("Аттар: "+ namesArray);
+
+3.
+let text = "Осы текстті біз түрлендіреміз"; //кез-келген текст жазсаңыздар болады
+let upperCaseText = text.toUpperCase();
+let lowerCaseText = text.toLowerCase();
+console.log("Бас әріптермен:", upperCaseText);
+console.log("Кішкентай әріптермен:", lowerCaseText);

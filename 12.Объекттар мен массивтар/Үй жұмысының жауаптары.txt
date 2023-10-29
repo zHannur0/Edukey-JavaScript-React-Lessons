@@ -1,0 +1,27 @@
+1.
+let person = {
+  name: "Пәленше",
+  age: 30,
+  city: "Алматы"
+};
+
+console.log(person);
+
+
+2.
+console.log("Name:", person.name);
+console.log("Age:", person.age);
+
+
+3.
+var fruits = ["алма", "банан", "апельсин", "киви"];
+console.log(fruits);
+
+
+4.
+fruits.push("алмұрт"); // "алмұрт" қосамыз
+let index = fruits.indexOf("банан");
+if (index !== -1) {
+  fruits.splice(index, 1); // "банан" жоямыз
+}
+console.log(fruits);

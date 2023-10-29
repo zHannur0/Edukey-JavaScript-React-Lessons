@@ -1,0 +1,3 @@
+Сіздерге бұл тапсырмада todo list жасау керек болады. Видеодан қарасаңыздар барлыңы түсінікті. 
+Мына жерден бастапқы кодты алыңыздар
+https://github.com/zHannur0/React-course-EduKey-/tree/practiceHtmlElements

@@ -1,0 +1,26 @@
+1.
+let number1 = 10;
+let number2 = 5;
+
+let sum = number1 + number2;     // 15
+let difference = number1 - number2;  // 5
+let product = number1 * number2;   // 50
+let quotient = number1 / number2;   // 2
+
+2.
+let firstName = "John";
+let lastName = "Doe";
+
+let fullName = firstName + " " + lastName;  // "John Doe"
+let greeting = "Салем, " + fullName;    // "Салем, John Doe"
+
+3.
+let numbers = [1, 2, 3, 4, 5];
+let fruits = ["алма", "банан", "апельсин"];
+
+numbers.push(6);
+fruits.push("алмұрт");
+
+console.log(numbers.length);  // 6
+console.log(fruits.length);   // 4
+

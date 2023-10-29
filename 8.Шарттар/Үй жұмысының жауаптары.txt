@@ -1,0 +1,31 @@
+1.
+let number = 7; // Кез-келген сан жаза беріңіз
+
+if (number % 2 === 0) {
+  console.log(`Сан ${number} жұп`);
+} else {
+  console.log(`Сан ${number} тақ`);
+}
+
+2.
+let hour = 12; // кез-келген уақыт жазыңыз, әрине 0 мен 24 арасында
+
+if (hour >= 0 && hour < 6) {
+  console.log("Қайырлы түн!");
+} else if (hour >= 6 && hour < 12) {
+  console.log("Қайырлы таң!");
+} else if (hour >= 12 && hour < 18) {
+  console.log("Қайырлы күн!");
+} else {
+  console.log("Қайырлы кеш!");
+}
+
+3.
+var age = 25; // Өз жасыңызды жазыңыз
+
+if (age >= 18) {
+  console.log("Кәмелетке толған");
+} else {
+  console.log("Кәмелетке толмаған");
+}
+

@@ -1,0 +1,30 @@
+Person.js->
+
+function Person(props) {
+  return (
+    <div>
+      <p>Name: {props.name}, Age: {props.age}</p>
+    </div>
+  );
+}
+
+export default Person;
+
+
+App.js ->
+
+import './App.css';
+import Person from './Person';
+
+function App() {
+  return (
+    <div className="App">
+    <Person name="Жаннұрхан" age={25} />
+    <Person name="Наруто" age={32} />
+    <Person name="Узумаки" age={28} />
+  </div>
+);
+}
+
+export default App;
+

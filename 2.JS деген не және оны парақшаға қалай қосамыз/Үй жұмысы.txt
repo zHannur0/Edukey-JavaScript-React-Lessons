@@ -1,0 +1,2 @@
+JS-пен танысыңыздар, әрі мен сабақта көрсеткен затты видеоға қарамай жасап көріңіздер! Және мына мақаламен танысып шықсаңыздар да артық етпес.
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript

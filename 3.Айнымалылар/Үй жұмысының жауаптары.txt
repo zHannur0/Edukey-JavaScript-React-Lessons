@@ -1,0 +1,23 @@
+//1 тапсырманың жауабы
+let name = "John";
+let age = 25;
+
+console.log(name); // атты консольге шығарып жатыр
+console.log(age);  // жасын консольге шығарып жатыр
+
+2.
+let x = 10;
+let y = 5;
+
+console.log(x + y); // қосу
+console.log(x - y); // азайту
+console.log(x * y); // көбейту
+console.log(x / y); // бөлу
+
+3.
+let firstName = "John";
+let lastName = "Doe";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName); // адамның аты мен тегін бірге шығарып жатыр

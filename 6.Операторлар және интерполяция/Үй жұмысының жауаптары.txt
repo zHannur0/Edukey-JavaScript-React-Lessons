@@ -1,0 +1,38 @@
+1.
+let x = 5;
+let y = 3;
+
+// a. Қосу
+console.log("Сложение:" + (x + y));
+
+// b. Азайту
+console.log("Вычитание:" + (x - y));
+
+// c. Көбейту
+console.log("Умножение:" + (x * y));
+
+// d. Бөлу
+console.log("Деление:" + (x / y));
+
+// e. Қалдық
+console.log("Взятие остатка:" + (x % y));
+
+2.
+let name = "Сіздің атыңыз"; // "Сіздің атыңыз" дегенге өз атыңызды қойыңыз
+let age = 25; // өз жасыңызды қойыңыз
+
+let message = `Менің атым ${name}, мен ${age} жастамын.`;
+console.log(message);
+
+3.
+
+let a = 10;
+let b = 5;
+
+console.log("a > b:" + a > b);
+console.log("a < b:" + a < b);
+console.log("a >= b:"+ a >= b);
+console.log("a <= b:"+ a <= b);
+console.log("a === b:"+ a === b);
+console.log("a !== b:"+ a !== b);
+

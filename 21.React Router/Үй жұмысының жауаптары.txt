@@ -1,0 +1,70 @@
+index.js ->
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import './index.css';
+import App from './App';
+import Profile from "./Components/Profile"
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element = {<App/>} />
+      <Route path = "/profile" element = {<Profile/>}/>
+    </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+
+Profile.js ->
+
+// Файл src/Components/Profile.js
+
+function Profile() {
+  return (
+    <div className="bg-gray-100 min-h-screen p-8">
+      <div className="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+        <div className="text-center">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Аватар"
+            className="w-24 h-24 rounded-full mx-auto mb-4"
+          />
+          <h2 className="text-2xl font-bold">Аты-жөні</h2>
+          <p className="text-gray-500">кез-келген Email</p>
+        </div>
+        <hr className="my-4" />
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Ақпараттар</h3>
+          <div className="flex justify-between mb-2">
+            <span className="text-gray-600">Аты:</span>
+            <span className="text-gray-800">Қолданушының аты</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-gray-600">Email:</span>
+            <span className="text-gray-800">Қолданушының Email</span>
+          </div>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Қызығушылықтары</h3>
+          <ul className="list-disc list-inside">
+            <li>Футбол</li>
+            <li>Тоғызқұмалақ</li>
+            <li>Комикстар</li>
+          </ul>
+        </div>
+        <div className="text-center">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            Профильды дұрыстау
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Profile;

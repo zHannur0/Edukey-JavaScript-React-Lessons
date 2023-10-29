@@ -1,0 +1,13 @@
+Тапсырма: Видеода айтқандай SignIn.js бетін өз қолдарыңызбен жазып көріңіздер. 
+Ол жерде қатты өзгеріс жоқ SignUp.js-тан барлығы сабақта үйренген нәрселер!
+
+Нұсқаулық:
+
+http://localhost:8080/api/auth осы апиды қолданасыздар авторизация жасауларыңыз үшін
+
+const LoginValidation = object().shape({
+    email: string().required("Reuired").email("Required"),
+    password: string().min(8, "Password should contains 8 symbols").required("Required"),
+});
+
+валидация осылай жазылады, қалған заттарды өздеріңіз толықтырыңыздар! Дизайнын осы жерге сурет ретінде салып қойдым.

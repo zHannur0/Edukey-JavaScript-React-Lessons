@@ -1,0 +1,18 @@
+1.
+let elementById = document.getElementById("myElement");
+console.log("Element" + elementById.textContent);
+
+
+2.
+let elementsByClass = document.getElementsByClassName("myClass");
+for (let i = 0; i < elementsByClass.length; i++) {
+  console.log("Element " + (i + 1) + ":" + elementsByClass[i].textContent);
+}
+
+3.
+let elementsByTag = document.getElementsByTagName("p");
+for (let i = 0; i < elementsByTag.length; i++) {
+  console.log("Element " + (i + 1) + ":", elementsByTag[i].textContent);
+}
+
+

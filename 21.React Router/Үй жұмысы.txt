@@ -1,0 +1,46 @@
+Тапсырма: Алдыңғы үй жұмысымен байланысқан. Сол үй жұмысының файлының жоғары оң жағына Profile батырмасын қойып соны басқанда Profil-ге өтетін етіп жасаңыздар. 
+
+Ол үшін осы сабақта қарап Router-ді түсініп алыңыздар және алдыңғы 20-сабақтың үй жұмысының кодын қолданыңыздар.
+
+Профильдің түрі қандай болу керек екені  мысалда сурет болып көрсетілген
+
+Бастапқы кодқа мысал:
+
+App.js осындай болуы керек ->
+
+import Article from './Article';
+import {Link} from "react-router-dom";
+
+function App() {
+  return (
+    <div className="bg-gray-100 p-4">
+      <div className='flex justify-end p-4'>
+        <Link to="/profile">
+        <button className='py-2 px-6 bg-sky-400 rounded'>Profile</button>
+        </Link>
+      </div>
+      <Article
+        title="Тауға саяхат"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in felis non tellus aliquam aliquam."
+        imageUrl="https://moya-planeta.ru/upload/images/xl/95/fe/95fe44d0e5fe53e49d874f9c2e07381ca8ea823a.jpg"
+      />
+      <Article
+        title="Тамақ пісіру"
+        text="Nullam nec semper eros. Fusce vel justo ullamcorper, auctor ante eget, tincidunt ante."
+        imageUrl="https://bbulvar.ru/upload/iblock/34b/34b7e3a6a5c54e9d9ef29e07364a8a3e.jpg"
+      />
+      <Article
+        title="Ғылым және технологиялар"
+        text="Vivamus nec elit odio. Donec volutpat, metus non lacinia gravida, lorem orci facilisis augue."
+        imageUrl="https://globalcentre.hse.ru/data/2017/04/22/1168825416/22.jpg"
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+

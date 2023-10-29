@@ -1,0 +1,18 @@
+Сұрауларға мысалдар:
+
+http://localhost:8080/api/signup ->
+
+{  
+"username": "KN"
+"email": "toregalikairat@gmail.com", 
+"password":"12345678"
+}
+
+
+http://localhost:8080/api/auth ->
+
+{  
+"email": "toregalinurtas@gmail.com", 
+"password":"12345678"
+}
+

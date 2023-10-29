@@ -1,0 +1,28 @@
+contact.test.js
+
+import { render,screen } from "@testing-library/react";
+import Contact from "../../pages/Contact";
+
+test('Contact component renders correctly', () => {
+    render(<Contact/>);
+    
+  // "REACH" бар ма жоқ па тексеру
+  const reachHeader = screen.getByText('REACH');
+  expect(reachHeader).toBeTruthy();
+
+  // Текстті тексеру
+  const descriptionText = screen.getByText('Tired of unanswered emails and countless hours on hold? Don’t be a victim of communication chaos, contact us today!');
+  expect(descriptionText).toBeTruthy();
+
+  //  Header and Footer бар ма жоқ па тексеру
+  const headerComponent = screen.getByRole('banner');
+  expect(headerComponent).toBeTruthy();
+
+  const footerComponent = screen.getByRole('contentinfo');
+  expect(footerComponent).toBeTruthy();
+});
+
+
+Contact.js - те осындай заттар жазыңыз
+<Header role="banner"/> //яғни роль беріңіз
+<Footer role="contentinfo"/>

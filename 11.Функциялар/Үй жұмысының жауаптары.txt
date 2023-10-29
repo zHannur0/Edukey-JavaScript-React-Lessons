@@ -1,0 +1,29 @@
+1.
+function square(number) {
+  return number * number;
+}
+
+console.log(square(2)); // 4 шығарады
+console.log(square(5)); // 25 шығарады
+console.log(square(8)); // 64 шығарады
+
+
+2.
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+console.log(isEven(4)); //  true
+console.log(isEven(7)); //  false
+console.log(isEven(10)); //  true
+
+3.
+
+function add(x, y) {
+  return x + y;
+}
+
+console.log(add(3, 5)); //  8
+console.log(add(10, 20)); //  30
+console.log(add(7, 2)); //  9

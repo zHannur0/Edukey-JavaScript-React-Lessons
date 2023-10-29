@@ -1,0 +1,49 @@
+// Файл src/Components/Article.js
+
+function Article({ title, text, imageUrl }) {
+    return (
+       <div className="bg-white p-4 shadow-md m-4">
+        <h2 className="text-2xl font-bold py-2">{title}</h2>
+        <p className="text-gray-700 py-2">{text}</p>
+        <img src={imageUrl} alt="Article" className="flex justify-center items-center mx-auto border border-black rounded " />
+      </div>
+    );
+  }
+  
+  export default Article;
+
+App.js ->
+
+import Article from './Components/Article'; //Article-ды импорттаймыз
+
+function App() {
+  return (
+    <div className="bg-gray-100 p-4">
+	//Артиклды осылай қолданамыз
+      <Article
+        title="Тауға саяхат"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in felis non tellus aliquam aliquam."
+        imageUrl="https://moya-planeta.ru/upload/images/xl/95/fe/95fe44d0e5fe53e49d874f9c2e07381ca8ea823a.jpg"
+      />
+      <Article
+        title="Тамақ пісіру"
+        text="Nullam nec semper eros. Fusce vel justo ullamcorper, auctor ante eget, tincidunt ante."
+        imageUrl="https://bbulvar.ru/upload/iblock/34b/34b7e3a6a5c54e9d9ef29e07364a8a3e.jpg"
+      />
+      <Article
+        title="Ғылым және технологиялар"
+        text="Vivamus nec elit odio. Donec volutpat, metus non lacinia gravida, lorem orci facilisis augue."
+        imageUrl="https://globalcentre.hse.ru/data/2017/04/22/1168825416/22.jpg"
+      />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+

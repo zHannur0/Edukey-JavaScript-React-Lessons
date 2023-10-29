@@ -1,0 +1,21 @@
+"use strict"
+
+const numberOfBooks = +prompt("Осы күнге дейін қанша кітап оқыдыңыз?", "");
+
+let bookDB = {
+    count: numberOfBooks,
+    books: {},
+    autors: {},
+    genres: [],
+    private: false
+}
+
+let a = prompt("Соңғы оқыған кітабыңыз?"," "),
+    b = prompt("Оны қаншаға бағалайсыз?"," "),
+    c = prompt("Соңғы оқыған кітабыңыз?"," "),
+    d = prompt("Оны қаншаға бағалайсыз?"," ");
+
+bookDB.books.a = b;
+bookDB["books"][c] = d;
+
+console.log(bookDB);

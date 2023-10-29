@@ -1,0 +1,25 @@
+1.
+let button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  console.log("Батырманы бастыңыз!");
+});
+
+
+2.
+let paragraph = document.getElementById("myParagraph");
+paragraph.addEventListener("mouseenter", function () {
+  paragraph.textContent = "Курсорды абзацқа қойып тұрсыз!";
+});
+
+
+3.
+let addButton = document.getElementById("addButton");
+let myList = document.getElementById("myList");
+
+addButton.addEventListener("click", function () {
+  let newItem = document.createElement("li");
+  newItem.textContent = "Жаңа элемент";
+  myList.appendChild(newItem);
+});
+
+
